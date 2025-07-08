@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-lime-400 hover:bg-lime-500 text-green-800 font-bold py-3 px-6 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-green-800 hover:bg-green-900 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-outline {
+    @apply border-2 border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-green-800 font-bold py-3 px-6 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-gray-800 uppercase tracking-wide text-center mb-12;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.zoom-animation {
+  animation: zoom 5s ease-in-out infinite alternate;
+}
