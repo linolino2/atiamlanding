@@ -7,6 +7,7 @@ import Programs from './components/Programs';
 import AboutSection from './components/AboutSection';
 import Testimonial from './components/Testimonial';
 import Staff from './components/Staff';
+import ExtraCurricular from './components/ExtraCurricular';
 import Events from './components/Events';
 import News from './components/News';
 import ExtraCurricular from './components/ExtraCurricular';
@@ -47,6 +48,7 @@ const HomePage = () => {
       <AboutSection />
       <Testimonial />
       <Staff />
+      <ExtraCurricular />
       <ExtraCurricular />
       <Events />
       <News />

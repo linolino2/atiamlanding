@@ -12,27 +12,35 @@ const Programs = () => {
 
   const programs = [
     {
-      title: "ICT Foundation",
-      description: "Build your foundation in Information and Communication Technology with hands-on experience.",
+      title: "AI Essentials & VR Gaming",
+      description: "Learn the fundamentals of artificial intelligence and virtual reality game development.",
       image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      duration: "3 Months",
+      fees: "5,000/= per month",
       link: "#"
     },
     {
-      title: "English Language",
-      description: "Master English communication skills for global opportunities and academic excellence.",
-      image: "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      title: "Forex & Cryptocurrency",
+      description: "Master trading in foreign exchange markets and cryptocurrency investments.",
+      image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      duration: "3 Months",
+      fees: "5,000/= per month",
       link: "#"
     },
     {
-      title: "Computer Programming",
-      description: "Learn modern programming languages and software development methodologies.",
-      image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      title: "Video Production & Motion Graphics",
+      description: "Create professional videos and dynamic motion graphics for various platforms.",
+      image: "https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      duration: "3 Months",
+      fees: "5,000/= per month",
       link: "#"
     },
     {
-      title: "Kiswahili Studies",
-      description: "Explore the richness of Kiswahili language and East African culture.",
-      image: "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      title: "Graphic Design",
+      description: "Develop skills in visual communication and digital art creation.",
+      image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      duration: "3 Months",
+      fees: "5,000/= per month",
       link: "#"
     }
   ];
@@ -112,6 +120,10 @@ const Programs = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{program.title}</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">{program.description}</p>
+                <div className="text-sm text-gray-500 mb-3">
+                  <p><span className="font-semibold">Duration:</span> {program.duration}</p>
+                  <p><span className="font-semibold">Fees:</span> {program.fees}</p>
+                </div>
                 <button className="text-lime-400 font-semibold hover:text-lime-500 transition-colors">
                   LEARN MORE →
                 </button>
