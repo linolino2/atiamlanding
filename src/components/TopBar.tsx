@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, Users, User, BookOpen } from 'lucide-react';
+import { MAPS_LOCATION_URL } from '../constants/contact';
 
 const TopBar = () => {
   return (
@@ -19,15 +20,30 @@ const TopBar = () => {
           </div>
           
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="#" className="flex items-center space-x-1 hover:text-lime-400 transition-colors">
+            <a 
+              href="https://wa.me/254793746046?text=I%20need%20student%20portal%20access" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center space-x-1 hover:text-lime-400 transition-colors"
+            >
               <Users size={14} />
               <span>Student Portal</span>
             </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-lime-400 transition-colors">
+            <a 
+              href="https://wa.me/254793746046?text=I%20need%20staff%20portal%20access" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center space-x-1 hover:text-lime-400 transition-colors"
+            >
               <User size={14} />
               <span>Staff Portal</span>
             </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-lime-400 transition-colors">
+            <a 
+              href="https://wa.me/254793746046?text=I%20need%20e-learning%20access" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center space-x-1 hover:text-lime-400 transition-colors"
+            >
               <BookOpen size={14} />
               <span>E-Learning</span>
             </a>

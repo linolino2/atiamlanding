@@ -1,5 +1,5 @@
 import React from 'react';
-import { createWhatsAppLink } from '../constants/contact';
+import { createWhatsAppLink, MAPS_LOCATION_URL } from '../constants/contact';
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
               REQUEST MORE INFO
             </a>
             <a 
-              href={createWhatsAppLink("I would like to visit the campus.")} 
+              href={MAPS_LOCATION_URL} 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-yellow-400 hover:bg-yellow-500 text-green-800 font-bold py-4 px-8 rounded-full transition-colors"

@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Linkedin, Twitter, Instagram, Mail, Phone, ArrowLeft } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { createWhatsAppLink } from '../constants/contact';
+import { createWhatsAppLink, MAPS_LOCATION_URL } from '../constants/contact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -305,12 +305,12 @@ const StaffDetails = () => {
               VIEW OPENINGS
             </a>
             <a 
-              href={createWhatsAppLink("I would like to contact HR about employment opportunities.")} 
+              href={MAPS_LOCATION_URL} 
               target="_blank" 
               rel="noopener noreferrer"
               className="border-2 border-white text-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200 inline-block"
             >
-              CONTACT HR
+              VISIT CAMPUS
             </a>
           </div>
         </div>

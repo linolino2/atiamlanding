@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { createWhatsAppLink } from '../constants/contact';
+import { createWhatsAppLink, MAPS_LOCATION_URL } from '../constants/contact';
 
 const Courses = () => {
   const courses = [
@@ -317,12 +317,12 @@ const Courses = () => {
               APPLY NOW
             </a>
             <a 
-              href={createWhatsAppLink("I would like to contact you about courses.")} 
+              href={MAPS_LOCATION_URL} 
               target="_blank" 
               rel="noopener noreferrer"
               className="border-2 border-white text-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200 inline-block"
             >
-              CONTACT US
+              VISIT CAMPUS
             </a>
           </div>
         </div>

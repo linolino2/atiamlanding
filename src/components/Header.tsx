@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Users, User, BookOpen } from 'lucide-react';
 import TopBar from './TopBar';
+import { MAPS_LOCATION_URL } from '../constants/contact';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,8 +29,22 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex space-x-4">
-            <button className="btn-outline">Apply Now</button>
-            <button className="btn-primary">Visit Campus</button>
+            <a 
+              href="https://wa.me/254793746046?text=I%20would%20like%20to%20apply%20to%20ATIAM%20College" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-outline"
+            >
+              Apply Now
+            </a>
+            <a 
+              href={MAPS_LOCATION_URL} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary"
+            >
+              Visit Campus
+            </a>
           </div>
 
           <button 
@@ -70,8 +85,22 @@ const Header = () => {
               </div>
               
               <div className="flex flex-col space-y-2 pt-4 border-t">
-                <button className="btn-outline">Apply Now</button>
-                <button className="btn-primary">Visit Campus</button>
+                <a 
+                  href="https://wa.me/254793746046?text=I%20would%20like%20to%20apply%20to%20ATIAM%20College" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-outline"
+                >
+                  Apply Now
+                </a>
+                <a 
+                  href={MAPS_LOCATION_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-primary"
+                >
+                  Visit Campus
+                </a>
               </div>
             </nav>
           </div>
