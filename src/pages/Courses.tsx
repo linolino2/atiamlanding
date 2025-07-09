@@ -57,6 +57,33 @@ const Courses = () => {
       image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       modules: ["Social Media Marketing", "SEO & SEM", "Content Creation", "Analytics"],
       fee: "KES 35,000"
+    },
+    {
+      title: "Graphic Design",
+      description: "Master the fundamentals of graphic design using industry-standard software and develop a professional portfolio.",
+      duration: "8 months",
+      level: "Beginner to Intermediate",
+      image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      modules: ["Design Principles", "Adobe Photoshop", "Adobe Illustrator", "Portfolio Development"],
+      fee: "KES 40,000"
+    },
+    {
+      title: "Business Administration",
+      description: "Develop essential business management skills including leadership, marketing, and financial management.",
+      duration: "12 months",
+      level: "Intermediate",
+      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      modules: ["Business Management", "Marketing Fundamentals", "Financial Accounting", "Human Resource Management"],
+      fee: "KES 50,000"
+    },
+    {
+      title: "Mobile App Development",
+      description: "Learn to create mobile applications for Android and iOS platforms using modern frameworks and tools.",
+      duration: "9 months",
+      level: "Intermediate",
+      image: "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+      modules: ["Mobile UI/UX Design", "Android Development", "iOS Development", "App Publishing"],
+      fee: "KES 48,000"
     }
   ];
 
