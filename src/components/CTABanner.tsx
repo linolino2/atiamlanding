@@ -37,9 +37,9 @@ const CTABanner = () => {
           Think again.
         </p>
         <p className="text-lg text-lime-200 mb-8">
-          Our institution is redefining what it means to learn in the modern world—offering you access to cutting-edge technology, globally competitive language programs, and hands-on training guided by professionally certified tutors.
+          Our institution is redefining what it means to learn in the modern world, offering you access to cutting-edge technology, globally competitive language programs, and hands-on training guided by professionally certified tutors.
 
-Whether you're mastering a new language or advancing your tech skills, we equip you with real-world experience and career-relevant tools that set you apart. This is more than education—it’s your launchpad to global opportunities.
+Whether you're mastering a new language or advancing your tech skills, we equip you with real-world experience and career-relevant tools that set you apart. This is more than education, it’s your launchpad to global opportunities.
         </p>
         <button className="bg-yellow-400 hover:bg-yellow-500 text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200">
           Download Bronchure
