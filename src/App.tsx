@@ -48,7 +48,6 @@ const HomePage = () => {
       <Testimonial />
       <Staff />
       <ExtraCurricular />
-      <ExtraCurricular />
       <Events />
       <News />
       <Footer />

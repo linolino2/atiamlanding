@@ -12,24 +12,34 @@ const ExtraCurricular = () => {
 
   const activities = [
     {
-      title: "Sports Club",
-      description: "Join our sports club to participate in football, basketball, volleyball, and athletics. Regular tournaments and competitions are organized to promote physical fitness and team spirit.",
-      image: "https://images.pexels.com/photos/3760607/pexels-photo-3760607.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      title: "5-Aside Football",
+      description: "Join our energetic 5-aside football sessions for fun, fitness, and friendly competition.",
+      image: "https://images.pexels.com/photos/46798/pexels-photo-46798.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
     },
     {
-      title: "Debate Club",
-      description: "Enhance your public speaking and critical thinking skills through our debate club. Students participate in local and national debate competitions.",
-      image: "https://images.pexels.com/photos/6146970/pexels-photo-6146970.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      title: "Gaming Club (Playstation)",
+      description: "Compete in popular Playstation games, challenge your friends, and unwind in our dedicated gaming zone.",
+      image: "https://images.pexels.com/photos/1390065/pexels-photo-1390065.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
     },
     {
-      title: "Music & Drama",
-      description: "Express your creativity through music and drama. Regular performances and cultural events provide a platform for students to showcase their talents.",
-      image: "https://images.pexels.com/photos/7095517/pexels-photo-7095517.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      title: "Chess Club",
+      description: "Develop strategic thinking and problem-solving skills in our Chess Club, open to all skill levels.",
+      image: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
     },
     {
-      title: "Community Service",
-      description: "Engage in community service projects that help develop empathy and social responsibility. Students participate in various outreach programs throughout the year.",
-      image: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+      title: "Board Games (Monopoly & More)",
+      description: "Enjoy classic board games like Monopoly and discover new favorites with fellow students.",
+      image: "https://images.pexels.com/photos/66004/pexels-photo-66004.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+    },
+    {
+      title: "Game Jenga",
+      description: "Test your steady hand and nerve with exciting Jenga challenges and other fun dexterity games.",
+      image: "https://images.pexels.com/photos/163036/mario-bros-figure-toy-nintendo-163036.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
+    },
+    {
+      title: "School Trips & Excursions",
+      description: "Explore new places, learn outside the classroom, and create lasting memories on our organized school trips.",
+      image: "https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop"
     }
   ];
 
