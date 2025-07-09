@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { createWhatsAppLink } from '../constants/contact';
 
 const Courses = () => {
   const courses = [
@@ -205,12 +206,22 @@ const Courses = () => {
                   </div>
 
                   <div className="flex space-x-3">
-                    <button className="flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                    <a 
+                      href={createWhatsAppLink(`I would like to enroll in the ${course.title} course.`)} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="flex-1 border border-green-700 text-green-700 hover:bg-green-700 hover:text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                    </a>
+                    <a 
+                      href={createWhatsAppLink(`I would like to learn more about the ${course.title} course.`)} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 border border-green-700 text-green-700 hover:bg-green-700 hover:text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center"
+                    >
                       Learn More
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -263,12 +274,22 @@ const Courses = () => {
                   </div>
 
                   <div className="flex space-x-3">
-                    <button className="flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                    <a 
+                      href={createWhatsAppLink(`I would like to enroll in the ${course.title} language course.`)} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="flex-1 border border-green-700 text-green-700 hover:bg-green-700 hover:text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                    </a>
+                    <a 
+                      href={createWhatsAppLink(`I would like to learn more about the ${course.title} language course.`)} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 border border-green-700 text-green-700 hover:bg-green-700 hover:text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center"
+                    >
                       Learn More
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -287,12 +308,22 @@ const Courses = () => {
             Join thousands of students who have transformed their careers with our courses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-lime-400 hover:bg-lime-500 text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200">
+            <a 
+              href={createWhatsAppLink("I would like to apply for a course.")} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-lime-400 hover:bg-lime-500 text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200 inline-block"
+            >
               APPLY NOW
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200">
+            </a>
+            <a 
+              href={createWhatsAppLink("I would like to contact you about courses.")} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200 inline-block"
+            >
               CONTACT US
-            </button>
+            </a>
           </div>
         </div>
       </section>

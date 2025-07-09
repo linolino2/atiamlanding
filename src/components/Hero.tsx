@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { AnimatePresence, motion } from "framer-motion";
+import { createWhatsAppLink } from "../constants/contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -123,15 +124,25 @@ const Hero = () => {
           ref={buttonsRef}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <button className="btn-primary text-lg px-8 py-4">
+          <a 
+            href={createWhatsAppLink("I would like to apply now.")} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary text-lg px-8 py-4"
+          >
             FIND YOUR PROGRAM
-          </button>
+          </a>
           <button className="btn-secondary text-lg px-8 py-4">
             WHY ATIAM?
           </button>
-          <button className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-green-800">
+          <a 
+            href={createWhatsAppLink("I would like to apply now.")} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-green-800"
+          >
             APPLY NOW
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { createWhatsAppLink } from '../constants/contact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,9 +93,14 @@ const News = () => {
                   <h3 className="text-lg font-bold text-gray-800 leading-tight group-hover:text-lime-400 transition-colors">
                     {item.title}
                   </h3>
-                  <button className="bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded text-sm self-start mt-4 transition-colors">
+                  <a 
+                    href={createWhatsAppLink(`I would like to read more about the news: ${item.title}`)} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded text-sm self-start mt-4 transition-colors inline-block"
+                  >
                     READ MORE
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

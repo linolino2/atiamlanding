@@ -41,9 +41,13 @@ const CTABanner = () => {
 
 Whether you're mastering a new language or advancing your tech skills, we equip you with real-world experience and career-relevant tools that set you apart. This is more than education, it’s your launchpad to global opportunities.
         </p>
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200">
+        <a 
+          href="/ATIAM College School Bronchure 2025 - July Updated.pdf" 
+          download
+          className="inline-block bg-yellow-400 hover:bg-yellow-500 text-green-800 font-bold py-4 px-8 rounded-full text-lg transition-colors duration-200"
+        >
           Download Bronchure
-        </button>
+        </a>
       </div>
     </section>
   );

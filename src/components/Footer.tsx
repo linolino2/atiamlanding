@@ -1,4 +1,5 @@
 import React from 'react';
+import { createWhatsAppLink } from '../constants/contact';
 
 const Footer = () => {
   return (
@@ -9,15 +10,30 @@ const Footer = () => {
             READY FOR WHAT'S NEXT
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-full transition-colors">
+            <a 
+              href={createWhatsAppLink("I would like to request more information.")} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-full transition-colors"
+            >
               REQUEST MORE INFO
-            </button>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-green-800 font-bold py-4 px-8 rounded-full transition-colors">
+            </a>
+            <a 
+              href={createWhatsAppLink("I would like to visit the campus.")} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-yellow-400 hover:bg-yellow-500 text-green-800 font-bold py-4 px-8 rounded-full transition-colors"
+            >
               VISIT CAMPUS
-            </button>
-            <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-full transition-colors">
+            </a>
+            <a 
+              href={createWhatsAppLink("I would like to explore the programs.")} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-full transition-colors"
+            >
               EXPLORE PROGRAMS
-            </button>
+            </a>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { createWhatsAppLink } from '../constants/contact';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,18 +119,29 @@ const Events = () => {
               <div className="p-6">
                 <h4 className="text-xl font-bold text-gray-800 mb-3">{event.title}</h4>
                 <p className="text-gray-600 leading-relaxed">{event.description}</p>
-                <button className="bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded text-sm mt-4 transition-colors">
+                <a 
+                  href={createWhatsAppLink(`I would like to learn more about the event: ${event.title}.`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded text-sm mt-4 transition-colors"
+                >
                   Learn More
-                </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <button ref={buttonRef} className="border border-green-700 text-green-700 hover:bg-green-700 hover:text-white py-2 px-6 rounded transition-colors">
+          <a 
+            ref={buttonRef as React.RefObject<HTMLAnchorElement>} 
+            href={createWhatsAppLink("I would like to see all upcoming events.")} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block border border-green-700 text-green-700 hover:bg-green-700 hover:text-white py-2 px-6 rounded transition-colors"
+          >
             SEE ALL EVENTS
-          </button>
+          </a>
         </div>
       </div>
     </section>

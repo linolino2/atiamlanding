@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { createWhatsAppLink } from "../constants/contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,17 +119,25 @@ const ExtraCurricular = () => {
               <div className="p-6">
                 <h4 className="text-xl font-bold text-gray-800 mb-3">{activity.title}</h4>
                 <p className="text-gray-600 mb-4 leading-relaxed">{activity.description}</p>
-                <button className="text-lime-400 font-semibold hover:text-lime-500 transition-colors">
+                <a 
+                  href={createWhatsAppLink(`I would like to learn more about the ${activity.title} extracurricular activity.`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-lime-400 font-semibold hover:text-lime-500 transition-colors inline-block"
+                >
                   LEARN MORE →
-                </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
         
         <div className="text-center mt-12">
-          <button 
-            ref={buttonRef} 
+          <a 
+            ref={buttonRef as React.RefObject<HTMLAnchorElement>}
+            href={createWhatsAppLink("I would like to view all extracurricular activities.")} 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="group inline-flex items-center bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-8 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             <span className="mr-2">VIEW ALL ACTIVITIES</span>
@@ -140,7 +149,7 @@ const ExtraCurricular = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>
