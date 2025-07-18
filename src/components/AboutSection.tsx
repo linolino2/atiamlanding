@@ -46,12 +46,12 @@ const AboutSection = () => {
               THE ATIAM DIFFERENCE
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We provide students with much more than just a single letter
-              grade. Our feedback identifies strengths and target areas for
-              growth. Our learning approach is centered around the 8 Abilities -
-              all of our students will learn and thrive apart. These are the
-              skills that will help you thrive both personally and
-              professionally.
+              ATIAM College stands as Nairobi's premier institution for ICT and Languages learning, 
+              offering world-class education that prepares students for global success. Our comprehensive 
+              ICT programs cover programming, web development, cybersecurity, and digital marketing, while 
+              our Languages department excels in English, Kiswahili, and German instruction. We provide 
+              students with personalized feedback that identifies strengths and growth areas, ensuring 
+              every graduate is equipped with the skills needed to thrive in today's interconnected world.
             </p>
             <button className="btn-secondary">OUR ABILITIES IN ACTION</button>
           </div>

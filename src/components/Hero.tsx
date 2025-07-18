@@ -104,19 +104,19 @@ const Hero = () => {
           ref={titleRef}
           className="text-5xl md:text-7xl font-bold uppercase mb-6 leading-tight"
         >
-          How Will You Forge Your Future?
+          Best ICT & Languages College in Nairobi
         </h1>
         <p
           ref={subtitleRef}
           className="text-xl md:text-2xl font-semibold mb-8 uppercase tracking-wide"
         >
-          IGNITE YOUR POTENTIAL
+          Excellence in ICT & Languages Learning Worldwide
         </p>
         <p
           ref={descriptionRef}
           className="text-lg md:text-xl mb-12 max-w-2xl mx-auto"
         >
-          Quality | Professional | Affordable
+          Transform your future with world-class ICT and Languages education in Nairobi. Quality | Professional | Affordable
         </p>
 
         <div
