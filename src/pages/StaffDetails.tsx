@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const StaffDetails = () => {
   const navigate = useNavigate();
-  const navigate = useNavigate();
   const sectionRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
