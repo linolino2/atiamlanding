@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowLeft } from 'lucide-react';
 import { ArrowLeft } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -12,7 +10,6 @@ import { INSTAGRAM_URL } from '../constants/contact';
 gsap.registerPlugin(ScrollTrigger);
 
 const GalleryPage = () => {
-  const navigate = useNavigate();
   const navigate = useNavigate();
   const sectionRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
@@ -171,10 +168,6 @@ const GalleryPage = () => {
 
     return () => ctx.revert();
   }, []);
-
-  const handleBackClick = () => {
-    navigate('/');
-  };
 
   const handleBackClick = () => {
     navigate('/');
