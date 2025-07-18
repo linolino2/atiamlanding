@@ -184,13 +184,7 @@ const GalleryPage = () => {
             onClick={handleBackClick}
             className="flex items-center text-white hover:text-lime-400 transition-colors mb-8 group"
           >
-            <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
-            Back to Home
-          </button>
-          <button 
-            onClick={handleBackClick}
-            className="flex items-center text-white hover:text-lime-400 transition-colors mb-8 group"
-          >
+            
             <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
             Back to Home
           </button>
