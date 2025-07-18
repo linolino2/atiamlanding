@@ -1,5 +1,14 @@
 import React from 'react';
-import { createWhatsAppLink, MAPS_LOCATION_URL } from '../constants/contact';
+import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { 
+  createWhatsAppLink, 
+  MAPS_LOCATION_URL, 
+  FACEBOOK_URL, 
+  TWITTER_URL, 
+  LINKEDIN_URL, 
+  INSTAGRAM_URL, 
+  YOUTUBE_URL 
+} from '../constants/contact';
 
 const Footer = () => {
   return (
@@ -43,6 +52,58 @@ const Footer = () => {
             <p className="text-sm leading-relaxed">
               Empowering students through excellence in ICT and Languages education.
             </p>
+            
+            {/* Social Media Links */}
+            <div className="mt-6">
+              <h4 className="font-bold text-white mb-3">FOLLOW US</h4>
+              <div className="flex space-x-3">
+                <a 
+                  href={FACEBOOK_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 bg-green-700 hover:bg-blue-600 text-white rounded-full transition-colors duration-200"
+                  aria-label="Follow us on Facebook"
+                >
+                  <Facebook size={18} />
+                </a>
+                <a 
+                  href={TWITTER_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 bg-green-700 hover:bg-black text-white rounded-full transition-colors duration-200"
+                  aria-label="Follow us on Twitter"
+                >
+                  <Twitter size={18} />
+                </a>
+                <a 
+                  href={LINKEDIN_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 bg-green-700 hover:bg-blue-700 text-white rounded-full transition-colors duration-200"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <Linkedin size={18} />
+                </a>
+                <a 
+                  href={INSTAGRAM_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 bg-green-700 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 text-white rounded-full transition-all duration-200"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Instagram size={18} />
+                </a>
+                <a 
+                  href={YOUTUBE_URL} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 bg-green-700 hover:bg-red-600 text-white rounded-full transition-colors duration-200"
+                  aria-label="Subscribe to our YouTube channel"
+                >
+                  <Youtube size={18} />
+                </a>
+              </div>
+            </div>
           </div>
           
           <div>
