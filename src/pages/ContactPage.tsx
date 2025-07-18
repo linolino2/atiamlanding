@@ -201,15 +201,15 @@ const ContactPage = () => {
           </div>
 
           <div ref={mapsRef} className="grid lg:grid-cols-2 gap-12">
-            {/* Nasra Garden Campus */}
+            {/* Nasra Garden Branch Campus */}
             <div className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="p-8">
                 <div className="flex items-center mb-4">
                   <MapPin className="w-6 h-6 text-green-700 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-800">Nasra Garden Campus</h3>
+                  <h3 className="text-2xl font-bold text-gray-800">Nasra Garden Branch Campus</h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Our main campus located in the heart of Nasra Garden, offering all our ICT and Languages programs with state-of-the-art facilities.
+                  Our branch campus located in Nasra Garden, providing convenient access to selected programs for students in this area.
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-gray-600">
@@ -218,11 +218,11 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-center text-gray-600">
                     <Users className="w-4 h-4 mr-2 text-green-700" />
-                    <span>Main Campus - All Programs Available</span>
+                    <span>Branch Campus - Selected Programs</span>
                   </div>
                 </div>
                 <a 
-                  href="https://maps.app.goo.gl/on3KUQkb4cwCQ1dCA" 
+                  href="https://www.google.com/maps/place/ATIAM+College+-+Nasra+Garden+Branch/@-1.2754702,36.9011191,17z/data=!3m1!4b1!4m6!3m5!1s0x182f15dcc05b929d:0x707b86f0ee0e44fe!8m2!3d-1.2754702!4d36.9011191!16s%2Fg%2F11vctzvgwj?entry=ttu&g_ep=EgoyMDI1MDcxNS4xIKXMDSoASAFQAw%3D%3D" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors mb-6"
@@ -232,58 +232,58 @@ const ContactPage = () => {
               </div>
               <div className="aspect-w-16 aspect-h-9">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8158!2d36.8219!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMzEuNiJTIDM2wrA0OSczMS4wIkU!5e0!3m2!1sen!2ske!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7158!2d36.9011191!3d-1.2754702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15dcc05b929d%3A0x707b86f0ee0e44fe!2sATIAM%20College%20-%20Nasra%20Garden%20Branch!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Nasra Garden Campus Location"
+                  title="Nasra Garden Branch Campus Location"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            {/* Komarok Campus */}
+            {/* Komarok Main Campus */}
             <div className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="p-8">
                 <div className="flex items-center mb-4">
-                  <MapPin className="w-6 h-6 text-blue-700 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-800">Komarok Campus</h3>
+                  <MapPin className="w-6 h-6 text-green-700 mr-3" />
+                  <h3 className="text-2xl font-bold text-gray-800">Komarok Main Campus</h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Our secondary campus in Komarok, providing convenient access to quality education for students in the eastern parts of Nairobi.
+                  Our main campus located in Komarok, offering all our ICT and Languages programs with comprehensive facilities and resources.
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-gray-600">
-                    <MapPin className="w-4 h-4 mr-2 text-blue-700" />
+                    <MapPin className="w-4 h-4 mr-2 text-green-700" />
                     <span>Komarok, Nairobi</span>
                   </div>
                   <div className="flex items-center text-gray-600">
-                    <Users className="w-4 h-4 mr-2 text-blue-700" />
-                    <span>Branch Campus - Selected Programs</span>
+                    <Users className="w-4 h-4 mr-2 text-green-700" />
+                    <span>Main Campus - All Programs Available</span>
                   </div>
                 </div>
                 <a 
-                  href="https://maps.app.goo.gl/komarokCampusLocation" 
+                  href="https://www.google.com/maps/dir//Komarock+Sector+3A.+near+infill+B+roundabout,+Nairobi/@-1.2638554,36.8265728,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f1532a7aa69c3:0xf59463859969ede4!2m2!1d36.9089748!2d-1.2638567?entry=ttu&g_ep=EgoyMDI1MDcxNS4xIKXMDSoASAFQAw%3D%3D" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors mb-6"
+                  className="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors mb-6"
                 >
                   Get Directions
                 </a>
               </div>
               <div className="aspect-w-16 aspect-h-9">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7158!2d36.9219!3d-1.2821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTYnNTUuNiJTIDM2wrA1NSczMS4wIkU!5e0!3m2!1sen!2ske!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7158!2d36.9089748!3d-1.2638567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1532a7aa69c3%3A0xf59463859969ede4!2sKomarock%20Sector%203A.!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Komarok Campus Location"
+                  title="Komarok Main Campus Location"
                   className="w-full h-full object-cover"
                 />
               </div>
