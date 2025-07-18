@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import Courses from './pages/Courses';
 import StaffDetails from './pages/StaffDetails';
 import GalleryPage from './pages/GalleryPage';
+import ContactPage from './pages/ContactPage';
 
 const HomePage = () => {
   const location = useLocation();
@@ -69,6 +70,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/staff" element={<StaffDetails />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

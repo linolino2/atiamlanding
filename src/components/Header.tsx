@@ -26,7 +26,7 @@ const Header = () => {
             <Link to="/gallery" className="text-gray-700 hover:text-lime-400 font-medium transition-colors">Gallery</Link>
             <Link to="/#events" className="text-gray-700 hover:text-lime-400 font-medium transition-colors">Events</Link>
             <Link to="/#news" className="text-gray-700 hover:text-lime-400 font-medium transition-colors">News</Link>
-            <Link to="/#contact" className="text-gray-700 hover:text-lime-400 font-medium transition-colors">Contact</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-lime-400 font-medium transition-colors">Contact</Link>
           </nav>
 
           <div className="hidden md:flex space-x-4">
@@ -65,7 +65,7 @@ const Header = () => {
               <Link to="/gallery" className="text-gray-700 hover:text-lime-400 font-medium" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
               <Link to="/#events" className="text-gray-700 hover:text-lime-400 font-medium" onClick={() => setIsMenuOpen(false)}>Events</Link>
               <Link to="/#news" className="text-gray-700 hover:text-lime-400 font-medium" onClick={() => setIsMenuOpen(false)}>News</Link>
-              <Link to="/#contact" className="text-gray-700 hover:text-lime-400 font-medium" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              <Link to="/contact" className="text-gray-700 hover:text-lime-400 font-medium" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               
               {/* Portal Links for Mobile */}
               <div className="border-t pt-4 mt-4">

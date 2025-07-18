@@ -48,6 +48,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-white mb-4">QUICK LINKS</h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="/contact" className="hover:text-lime-400 transition-colors">Contact Us</a></li>
               <li><a href="#" className="hover:text-lime-400 transition-colors">Admissions</a></li>
               <li><a href="#" className="hover:text-lime-400 transition-colors">Academic Calendar</a></li>
               <li><a href="#" className="hover:text-lime-400 transition-colors">Student Life</a></li>
