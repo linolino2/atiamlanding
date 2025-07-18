@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ArrowLeft } from 'lucide-react';
 import { ArrowLeft } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,6 +12,7 @@ import { INSTAGRAM_URL } from '../constants/contact';
 gsap.registerPlugin(ScrollTrigger);
 
 const GalleryPage = () => {
+  const navigate = useNavigate();
   const navigate = useNavigate();
   const sectionRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
@@ -173,6 +176,10 @@ const GalleryPage = () => {
     navigate('/');
   };
 
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -180,6 +187,13 @@ const GalleryPage = () => {
       {/* Hero Section */}
       <section className="pt-36 pb-20 bg-gradient-to-r from-green-800 to-green-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <button 
+            onClick={handleBackClick}
+            className="flex items-center text-white hover:text-lime-400 transition-colors mb-8 group"
+          >
+            <ArrowLeft className="mr-2 group-hover:-translate-x-1 transition-transform" size={20} />
+            Back to Home
+          </button>
           <button 
             onClick={handleBackClick}
             className="flex items-center text-white hover:text-lime-400 transition-colors mb-8 group"
