@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './components/Header';
 import Hero from './components/Hero';
 import CTABanner from './components/CTABanner';
+import NumbersSection from './components/NumbersSection';
 import Programs from './components/Programs';
 import AboutSection from './components/AboutSection';
 import Testimonial from './components/Testimonial';
+import AccreditationPartners from './components/AccreditationPartners';
 import Staff from './components/Staff';
 import ExtraCurricular from './components/ExtraCurricular';
 import Events from './components/Events';
@@ -44,9 +46,11 @@ const HomePage = () => {
       <Header />
       <Hero />
       <CTABanner />
+      <NumbersSection />
       <Programs />
       <AboutSection />
       <Testimonial />
+      <AccreditationPartners />
       <Staff />
       <ExtraCurricular />
       <Events />

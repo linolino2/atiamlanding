@@ -62,3 +62,51 @@
 .zoom-animation {
   animation: zoom 5s ease-in-out infinite alternate;
 }
+
+/* Carousel Animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: 200%;
+  animation: scroll-left 30s linear infinite;
+}
+
+.carousel-reverse {
+  animation: scroll-right 25s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
