@@ -45,7 +45,7 @@ const NumbersSection = () => {
 
       // Animate number counting effect
       stats.forEach((stat, index) => {
-        const numberElement = numbersRef.current?.children[index]?.querySelector('.stat-number');
+        const numberElement = numbersRef.current?.children[index]?.querySelector('.number');
         if (numberElement) {
           const finalNumber = parseInt(stat.number.replace(',', ''));
           gsap.from({ value: 0 }, {
