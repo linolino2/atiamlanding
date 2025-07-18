@@ -39,8 +39,14 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="py-20 bg-lime-400 relative overflow-hidden">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      className="py-20 bg-fixed bg-cover bg-center bg-no-repeat relative overflow-hidden min-h-[600px] flex items-center"
+      style={{ backgroundImage: 'url(/images/image.png)' }}
+    >
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="relative">
           {testimonials.map((testimonial, index) => (
             <div
