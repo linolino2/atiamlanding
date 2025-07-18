@@ -121,7 +121,7 @@ const Hero = () => {
 
         <div
           ref={buttonsRef}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <a 
             href={createWhatsAppLink("I would like to apply now.")} 
