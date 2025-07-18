@@ -13,6 +13,7 @@ import News from './components/News';
 import Footer from './components/Footer';
 import Courses from './pages/Courses';
 import StaffDetails from './pages/StaffDetails';
+import GalleryPage from './pages/GalleryPage';
 
 const HomePage = () => {
   const location = useLocation();
@@ -63,6 +64,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/staff" element={<StaffDetails />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
       </div>
     </Router>
