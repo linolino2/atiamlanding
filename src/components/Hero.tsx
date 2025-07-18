@@ -104,20 +104,19 @@ const Hero = () => {
           ref={titleRef}
           className="text-5xl md:text-7xl font-bold uppercase mb-6 leading-tight"
         >
-          GET READY
+          How Will You Forge Your Future?
         </h1>
         <p
           ref={subtitleRef}
           className="text-xl md:text-2xl font-semibold mb-8 uppercase tracking-wide"
         >
-          TO IGNITE YOUR POTENTIAL
+          IGNITE YOUR POTENTIAL
         </p>
         <p
           ref={descriptionRef}
           className="text-lg md:text-xl mb-12 max-w-2xl mx-auto"
         >
-          Join ATIAM College - Your gateway to excellence in ICT and Languages
-          (English & Kiswahili)
+          Quality | Professional | Affordable
         </p>
 
         <div
