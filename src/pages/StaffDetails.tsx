@@ -141,9 +141,6 @@ const StaffDetails = () => {
     navigate('/');
   };
 
-  const handleBackClick = () => {
-    navigate('/');
-  };
 
   return (
     <div className="min-h-screen">
